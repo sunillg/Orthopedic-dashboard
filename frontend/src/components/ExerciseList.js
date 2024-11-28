@@ -13,6 +13,7 @@
 //   ];
 
 //   // Add unique IDs to preloaded exercises when the component mounts
+
 //   useEffect(() => {
 //     const exercisesWithIds = preloadedExercises.map((exercise) => ({
 //       ...exercise,
@@ -2558,7 +2559,7 @@ const ExerciseList = () => {
       
     
       <div className="mb-3">
-        <h5>Add a New Exercise</h5>
+        <h5>Add New Exercise</h5>
         <div className="row">
          {/* Body Part Dropdown */}
          <div className="col">
@@ -2568,7 +2569,7 @@ const ExerciseList = () => {
               value={exerciseInput.bodyPart}
               onChange={handleBodyPartChange}
             >
-              <option value="">Select Body Part</option>
+              <option value="">Select Body Parts</option>
               {Object.keys(bodyPartExercises).map((bodyPart) => (
                 <option key={bodyPart} value={bodyPart}>
                   {bodyPart}
